@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: log-analytics-config
+  namespace: log-analytics
+data:
+  ELASTICSEARCH_URL: http://elasticsearch:9200
+  ELASTICSEARCH_INDEX: logs
+  PROCESSOR_URL: http://processor:8001/logs
+  VITE_QUERY_API_URL: http://log-analytics.local/api

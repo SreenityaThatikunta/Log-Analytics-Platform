@@ -1,0 +1,60 @@
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.1
+    environment:
+      discovery.type: single-node
+      xpack.security.enabled: "false"
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+
+  processor:
+    build:
+      context: ..
+      dockerfile: services/processor/Dockerfile
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_INDEX: logs
+    depends_on:
+      - elasticsearch
+    ports:
+      - "8001:8001"
+
+  log-collector:
+    build:
+      context: ..
+      dockerfile: services/log-collector/Dockerfile
+    environment:
+      PROCESSOR_URL: http://processor:8001/logs
+    depends_on:
+      - processor
+    ports:
+      - "50051:50051"
+
+  query-service:
+    build:
+      context: ..
+      dockerfile: services/query-service/Dockerfile
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_INDEX: logs
+    depends_on:
+      - elasticsearch
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: services/frontend/Dockerfile
+    environment:
+      VITE_QUERY_API_URL: http://localhost:8000
+    depends_on:
+      - query-service
+    ports:
+      - "5173:5173"
+
+volumes:
+  elasticsearch-data:

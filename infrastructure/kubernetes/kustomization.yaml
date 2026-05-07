@@ -1,0 +1,17 @@
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - elasticsearch/service.yaml
+  - elasticsearch/statefulset.yaml
+  - processor/service.yaml
+  - processor/deployment.yaml
+  - log-collector/service.yaml
+  - log-collector/deployment.yaml
+  - log-collector/hpa.yaml
+  - query-service/service.yaml
+  - query-service/deployment.yaml
+  - query-service/hpa.yaml
+  - frontend/service.yaml
+  - frontend/deployment.yaml
+  - ingress.yaml
+
