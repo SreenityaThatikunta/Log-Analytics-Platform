@@ -1,1 +1,6 @@
 logenv/
+.DS_Store
+__pycache__/
+.vscode/
+venv/
+.env/
