@@ -11,10 +11,10 @@ The processor turns incoming collector payloads into Elasticsearch documents.
 
 ## Files
 
-- [app/processor.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/processor/app/processor.py): FastAPI app and indexing logic
-- [app/pipeline.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/processor/app/pipeline.py): transformation logic
-- [requirements.txt](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/processor/requirements.txt): Python dependencies
-- [Dockerfile](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/processor/Dockerfile): container build
+- [app/processor.py](app/processor.py): FastAPI app and indexing logic
+- [app/pipeline.py](app/pipeline.py): transformation logic
+- [requirements.txt](requirements.txt): Python dependencies
+- [Dockerfile](Dockerfile): container build
 
 ## Current Transformation
 

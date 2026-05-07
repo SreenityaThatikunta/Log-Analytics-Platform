@@ -4,7 +4,7 @@ This folder contains the runtime deployment definitions for local and Kubernetes
 
 ## Contents
 
-- [docker-compose.yml](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/infrastructure/docker-compose.yml): local multi-container development stack
+- [docker-compose.yml](docker-compose.yml): local multi-container development stack
 - [kubernetes/README.md](kubernetes/README.md): detailed Kubernetes resource documentation
 
 ## Local Runtime
@@ -26,4 +26,3 @@ This starts:
 ## Kubernetes Runtime
 
 Use the manifests in `infrastructure/kubernetes` together with `./scripts/build.sh` and `./scripts/deploy.sh`.
-

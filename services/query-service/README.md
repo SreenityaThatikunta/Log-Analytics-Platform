@@ -10,11 +10,11 @@ The query service is the HTTP read interface for indexed logs.
 
 ## Files
 
-- [app/main.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/query-service/app/main.py): FastAPI app and middleware setup
-- [app/routes.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/query-service/app/routes.py): route definitions
-- [app/elastic.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/query-service/app/elastic.py): Elasticsearch query logic
-- [requirements.txt](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/query-service/requirements.txt): Python dependencies
-- [Dockerfile](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/query-service/Dockerfile): container build
+- [app/main.py](app/main.py): FastAPI app and middleware setup
+- [app/routes.py](app/routes.py): route definitions
+- [app/elastic.py](app/elastic.py): Elasticsearch query logic
+- [requirements.txt](requirements.txt): Python dependencies
+- [Dockerfile](Dockerfile): container build
 
 ## Endpoints
 

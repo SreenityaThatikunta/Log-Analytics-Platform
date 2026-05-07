@@ -12,11 +12,11 @@ The log collector is the ingestion edge of the platform.
 
 ## Files
 
-- [app/server.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/log-collector/app/server.py): gRPC server bootstrap
-- [app/handler.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/log-collector/app/handler.py): stream handler implementation
-- [app/auth.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/log-collector/app/auth.py): optional API key validation
-- [requirements.txt](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/log-collector/requirements.txt): Python dependencies
-- [Dockerfile](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/services/log-collector/Dockerfile): container build
+- [app/server.py](app/server.py): gRPC server bootstrap
+- [app/handler.py](app/handler.py): stream handler implementation
+- [app/auth.py](app/auth.py): optional API key validation
+- [requirements.txt](requirements.txt): Python dependencies
+- [Dockerfile](Dockerfile): container build
 
 ## Request Flow
 

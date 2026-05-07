@@ -4,9 +4,9 @@ This folder contains helper scripts for proto generation, image building, and Ku
 
 ## Files
 
-- [build.sh](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/scripts/build.sh): builds Docker images for all services
-- [deploy.sh](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/scripts/deploy.sh): deploys Kubernetes resources
-- [generate_proto.sh](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/scripts/generate_proto.sh): regenerates gRPC Python bindings
+- [build.sh](build.sh): builds Docker images for all services
+- [deploy.sh](deploy.sh): deploys Kubernetes resources
+- [generate_proto.sh](generate_proto.sh): regenerates gRPC Python bindings
 
 ## Expected Usage
 
@@ -37,4 +37,3 @@ Regenerate protobuf bindings:
 - the API server is reachable
 
 After that it applies the namespace manifest and then applies the kustomize bundle.
-

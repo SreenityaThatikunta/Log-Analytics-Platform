@@ -4,9 +4,9 @@ This folder contains the shared gRPC contract for the ingestion pipeline.
 
 ## Files
 
-- [log.proto](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/proto/log.proto): source protobuf definition
-- [log_pb2.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/proto/log_pb2.py): generated protobuf Python messages
-- [log_pb2_grpc.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/proto/log_pb2_grpc.py): generated gRPC Python service bindings
+- [log.proto](log.proto): source protobuf definition
+- [log_pb2.py](log_pb2.py): generated protobuf Python messages
+- [log_pb2_grpc.py](log_pb2_grpc.py): generated gRPC Python service bindings
 
 ## Contract
 
@@ -40,4 +40,3 @@ To regenerate Python bindings:
 ```
 
 That script runs `grpc_tools.protoc` against `proto/log.proto`.
-

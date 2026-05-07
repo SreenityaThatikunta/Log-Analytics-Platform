@@ -4,10 +4,10 @@ This folder contains the Kubernetes deployment manifests for the platform.
 
 ## Resources
 
-- [namespace.yaml](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/infrastructure/kubernetes/namespace.yaml): namespace creation
-- [configmap.yaml](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/infrastructure/kubernetes/configmap.yaml): shared environment configuration
-- [kustomization.yaml](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/infrastructure/kubernetes/kustomization.yaml): aggregate manifest entrypoint
-- [ingress.yaml](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/infrastructure/kubernetes/ingress.yaml): frontend and API routing
+- [namespace.yaml](namespace.yaml): namespace creation
+- [configmap.yaml](configmap.yaml): shared environment configuration
+- [kustomization.yaml](kustomization.yaml): aggregate manifest entrypoint
+- [ingress.yaml](ingress.yaml): frontend and API routing
 
 Service-specific subfolders:
 
@@ -75,4 +75,3 @@ Frontend:
 ```bash
 kubectl port-forward svc/frontend 5173:80 -n log-analytics
 ```
-

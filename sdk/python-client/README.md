@@ -4,8 +4,8 @@ This folder provides a simple sample producer for the gRPC collector.
 
 ## Files
 
-- [client.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/sdk/python-client/client.py): gRPC client helpers and built-in scenarios
-- [example.py](/Users/sreenityathatikunta/Documents/Projects/log-analytics-platform/sdk/python-client/example.py): CLI-style entrypoint used by the `Makefile`
+- [client.py](client.py): gRPC client helpers and built-in scenarios
+- [example.py](example.py): CLI-style entrypoint used by the `Makefile`
 
 ## Main Functions
 
@@ -88,4 +88,3 @@ When testing against Kubernetes, `make test-log` only works while the collector 
 ```bash
 kubectl port-forward svc/log-collector 50051:50051 -n log-analytics
 ```
-
