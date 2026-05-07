@@ -114,5 +114,15 @@ Implemented and verified:
 - Minikube deployment
 - HPA metrics via Metrics Server
 
-For the full detailed documentation, use the folder READMEs linked above.
+## Future Phase 4
 
+Planned next-step improvements:
+
+- add Kafka between collector and processor for buffering and backpressure handling
+- add Redis for caching frequent query results
+- improve service hardening with richer health checks and more structured logging
+- add stronger auth controls for ingestion and query access
+- add more automated tests and load testing
+- expand the frontend beyond basic service and level filtering
+
+For the full detailed documentation, use the folder READMEs linked above.
